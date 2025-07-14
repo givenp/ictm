@@ -1,0 +1,48 @@
+{
+  "kind": "singleType",
+  "collectionName": "articles",
+  "info": {
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "Article"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "authors": {
+      "type": "string",
+      "required": true
+    },
+    "doi": {
+      "type": "uid",
+      "required": true
+    },
+    "publicatioDate": {
+      "type": "date",
+      "required": true
+    },
+    "abstract": {
+      "type": "blocks"
+    },
+    "pdf": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "keywords": {
+      "type": "string"
+    }
+  }
+}
