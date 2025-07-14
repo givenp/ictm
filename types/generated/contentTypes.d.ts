@@ -410,7 +410,7 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
-export interface ApiArticleArticle extends Struct.SingleTypeSchema {
+export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
   collectionName: 'articles';
   info: {
     displayName: 'Article';
@@ -439,7 +439,7 @@ export interface ApiArticleArticle extends Struct.SingleTypeSchema {
       true
     > &
       Schema.Attribute.Required;
-    publicatioDate: Schema.Attribute.Date & Schema.Attribute.Required;
+    publicationDate: Schema.Attribute.Date & Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;

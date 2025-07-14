@@ -1,5 +1,5 @@
 {
-  "kind": "singleType",
+  "kind": "collectionType",
   "collectionName": "articles",
   "info": {
     "singularName": "article",
@@ -23,7 +23,7 @@
       "type": "uid",
       "required": true
     },
-    "publicatioDate": {
+    "publicationDate": {
       "type": "date",
       "required": true
     },
