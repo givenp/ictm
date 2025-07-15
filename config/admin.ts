@@ -11,7 +11,7 @@ export default ({ env }) => ({
     },
   },
   secrets: {
-    encryptionKey: env('ENCRYPTION_KEY'),
+    encryptionKey: env('ENCRYPTION_KEY', 'ictm2025'),
   },
   flags: {
     nps: env.bool('FLAG_NPS', true),
